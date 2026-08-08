@@ -1,0 +1,11 @@
+org\asciidoctor\maven\CodeLine.class
+org\asciidoctor\maven\I18nUtils.class
+org\asciidoctor\maven\I18nInlineMacro.class
+org\asciidoctor\maven\FileReader.class
+org\asciidoctor\maven\I18nMacroExtension.class
+org\asciidoctor\maven\FileWriter.class
+org\asciidoctor\maven\FileLoader.class
+org\asciidoctor\maven\I18n.class
+org\asciidoctor\maven\I18nDocinfoProcessor.class
+org\asciidoctor\maven\I18nPreprocessor.class
+org\asciidoctor\maven\CodeLine$Builder.class

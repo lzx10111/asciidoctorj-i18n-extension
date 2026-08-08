@@ -1,0 +1,1383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="I18nTests" time="0.67" tests="22" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="c:\Users\PC\Documents\Java\asciidoctorj-i18n-extension\target\test-classes;c:\Users\PC\Documents\Java\asciidoctorj-i18n-extension\target\classes;C:\Users\PC\.m2\repository\org\asciidoctor\asciidoctorj\2.5.2\asciidoctorj-2.5.2.jar;C:\Users\PC\.m2\repository\org\asciidoctor\asciidoctorj-api\2.5.2\asciidoctorj-api-2.5.2.jar;C:\Users\PC\.m2\repository\org\jruby\jruby\9.2.17.0\jruby-9.2.17.0.jar;C:\Users\PC\.m2\repository\org\jruby\jruby-core\9.2.17.0\jruby-core-9.2.17.0.jar;C:\Users\PC\.m2\repository\com\github\jnr\jnr-netdb\1.2.0\jnr-netdb-1.2.0.jar;C:\Users\PC\.m2\repository\com\github\jnr\jnr-enxio\0.32.3\jnr-enxio-0.32.3.jar;C:\Users\PC\.m2\repository\com\github\jnr\jnr-unixsocket\0.38.5\jnr-unixsocket-0.38.5.jar;C:\Users\PC\.m2\repository\com\github\jnr\jnr-posix\3.1.4\jnr-posix-3.1.4.jar;C:\Users\PC\.m2\repository\com\github\jnr\jnr-constants\0.10.1\jnr-constants-0.10.1.jar;C:\Users\PC\.m2\repository\com\github\jnr\jffi\1.3.1\jffi-1.3.1.jar;C:\Users\PC\.m2\repository\com\github\jnr\jffi\1.3.1\jffi-1.3.1-native.jar;C:\Users\PC\.m2\repository\org\jruby\joni\joni\2.1.31\joni-2.1.31.jar;C:\Users\PC\.m2\repository\org\jruby\jcodings\jcodings\1.0.46\jcodings-1.0.46.jar;C:\Users\PC\.m2\repository\org\jruby\dirgra\0.3\dirgra-0.3.jar;C:\Users\PC\.m2\repository\com\headius\invokebinder\1.11\invokebinder-1.11.jar;C:\Users\PC\.m2\repository\com\headius\options\1.4\options-1.4.jar;C:\Users\PC\.m2\repository\com\jcraft\jzlib\1.1.3\jzlib-1.1.3.jar;C:\Users\PC\.m2\repository\com\martiansoftware\nailgun-server\0.9.1\nailgun-server-0.9.1.jar;C:\Users\PC\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\PC\.m2\repository\com\headius\backport9\1.8\backport9-1.8.jar;C:\Users\PC\.m2\repository\javax\annotation\javax.annotation-api\1.3.1\javax.annotation-api-1.3.1.jar;C:\Users\PC\.m2\repository\org\jruby\jruby-stdlib\9.2.17.0\jruby-stdlib-9.2.17.0.jar;C:\Users\PC\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.22.1\jackson-databind-2.22.1.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.22\jackson-annotations-2.22.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.22.1\jackson-core-2.22.1.jar;C:\Users\PC\.m2\repository\org\junit\jupiter\junit-jupiter\6.1.2\junit-jupiter-6.1.2.jar;C:\Users\PC\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.1.2\junit-jupiter-api-6.1.2.jar;C:\Users\PC\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\PC\.m2\repository\org\junit\platform\junit-platform-commons\6.1.2\junit-platform-commons-6.1.2.jar;C:\Users\PC\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\PC\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\PC\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.1.2\junit-jupiter-params-6.1.2.jar;C:\Users\PC\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.1.2\junit-jupiter-engine-6.1.2.jar;C:\Users\PC\.m2\repository\org\junit\platform\junit-platform-engine\6.1.2\junit-platform-engine-6.1.2.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="GMT-04:00"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="ES"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\PC\AppData\Local\Temp\surefire17148555639533803224\surefirebooter-20260730061017793_3.jar C:\Users\PC\AppData\Local\Temp\surefire17148555639533803224 2026-07-30T06-10-17_548-jvmRun1 surefire-20260730061017793_1tmp surefire_0-20260730061017793_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="c:\Users\PC\Documents\Java\asciidoctorj-i18n-extension\target\test-classes;c:\Users\PC\Documents\Java\asciidoctorj-i18n-extension\target\classes;C:\Users\PC\.m2\repository\org\asciidoctor\asciidoctorj\2.5.2\asciidoctorj-2.5.2.jar;C:\Users\PC\.m2\repository\org\asciidoctor\asciidoctorj-api\2.5.2\asciidoctorj-api-2.5.2.jar;C:\Users\PC\.m2\repository\org\jruby\jruby\9.2.17.0\jruby-9.2.17.0.jar;C:\Users\PC\.m2\repository\org\jruby\jruby-core\9.2.17.0\jruby-core-9.2.17.0.jar;C:\Users\PC\.m2\repository\com\github\jnr\jnr-netdb\1.2.0\jnr-netdb-1.2.0.jar;C:\Users\PC\.m2\repository\com\github\jnr\jnr-enxio\0.32.3\jnr-enxio-0.32.3.jar;C:\Users\PC\.m2\repository\com\github\jnr\jnr-unixsocket\0.38.5\jnr-unixsocket-0.38.5.jar;C:\Users\PC\.m2\repository\com\github\jnr\jnr-posix\3.1.4\jnr-posix-3.1.4.jar;C:\Users\PC\.m2\repository\com\github\jnr\jnr-constants\0.10.1\jnr-constants-0.10.1.jar;C:\Users\PC\.m2\repository\com\github\jnr\jffi\1.3.1\jffi-1.3.1.jar;C:\Users\PC\.m2\repository\com\github\jnr\jffi\1.3.1\jffi-1.3.1-native.jar;C:\Users\PC\.m2\repository\org\jruby\joni\joni\2.1.31\joni-2.1.31.jar;C:\Users\PC\.m2\repository\org\jruby\jcodings\jcodings\1.0.46\jcodings-1.0.46.jar;C:\Users\PC\.m2\repository\org\jruby\dirgra\0.3\dirgra-0.3.jar;C:\Users\PC\.m2\repository\com\headius\invokebinder\1.11\invokebinder-1.11.jar;C:\Users\PC\.m2\repository\com\headius\options\1.4\options-1.4.jar;C:\Users\PC\.m2\repository\com\jcraft\jzlib\1.1.3\jzlib-1.1.3.jar;C:\Users\PC\.m2\repository\com\martiansoftware\nailgun-server\0.9.1\nailgun-server-0.9.1.jar;C:\Users\PC\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\PC\.m2\repository\com\headius\backport9\1.8\backport9-1.8.jar;C:\Users\PC\.m2\repository\javax\annotation\javax.annotation-api\1.3.1\javax.annotation-api-1.3.1.jar;C:\Users\PC\.m2\repository\org\jruby\jruby-stdlib\9.2.17.0\jruby-stdlib-9.2.17.0.jar;C:\Users\PC\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.22.1\jackson-databind-2.22.1.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.22\jackson-annotations-2.22.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.22.1\jackson-core-2.22.1.jar;C:\Users\PC\.m2\repository\org\junit\jupiter\junit-jupiter\6.1.2\junit-jupiter-6.1.2.jar;C:\Users\PC\.m2\repository\org\junit\jupiter\junit-jupiter-api\6.1.2\junit-jupiter-api-6.1.2.jar;C:\Users\PC\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\PC\.m2\repository\org\junit\platform\junit-platform-commons\6.1.2\junit-platform-commons-6.1.2.jar;C:\Users\PC\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\PC\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\PC\.m2\repository\org\junit\jupiter\junit-jupiter-params\6.1.2\junit-jupiter-params-6.1.2.jar;C:\Users\PC\.m2\repository\org\junit\jupiter\junit-jupiter-engine\6.1.2\junit-jupiter-engine-6.1.2.jar;C:\Users\PC\.m2\repository\org\junit\platform\junit-platform-engine\6.1.2\junit-platform-engine-6.1.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\PC"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="c:\Users\PC\Documents\Java\asciidoctorj-i18n-extension"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\PC\AppData\Local\Temp\surefire17148555639533803224\surefirebooter-20260730061017793_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.13+10-LTS-268"/>
+    <property name="user.name" value="PC"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\PC\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\PC\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.13"/>
+    <property name="user.dir" value="c:\Users\PC\Documents\Java\asciidoctorj-i18n-extension"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python312\Scripts\;C:\Python312\;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\app\PC\product\21c\dbhomeXE\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Gpg4win\..\GnuPG\bin;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Apache-maven-3.9.16\bin;C:\Users\PC\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\PC\AppData\Local\Programs\Python\Python311\;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\Users\PC\AppData\Local\Programs\Microsoft VS Code\bin;C:\msys64\ucrt64\bin;C:\Users\PC\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA 2024.2.4\bin;;C:\Users\PC\AppData\Roaming\npm;c:\Users\PC\.vscode\extensions\vscjava.vscode-java-debug-0.59.0\bundled\scripts\noConfigScripts;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.13+10-LTS-268"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="getNavbarInnerHTML" classname="I18nTests" time="0.35">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests getNavbarInnerHTML
+INFO: navbar.innerHTML =
+        `<select class="i18n i18n-key_locales" id="lang-switcher">
+            <option value="de">German</option>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+        </select>
+`;
+]]></system-err>
+  </testcase>
+  <testcase name="getFunctionLoadTest" classname="I18nTests" time="0.017">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests getFunctionLoadTest
+INFO: function loadTranslations(lang) {
+    switch (lang) {
+        case "de":
+            return deTranslations;
+        case "en":
+            return enTranslations;
+        case "es":
+            return esTranslations;
+
+        default:
+            return esTranslations;
+    }
+}
+]]></system-err>
+  </testcase>
+  <testcase name="replaceSwitcherInnerHTMLTest" classname="I18nTests" time="0.011">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests replaceSwitcherInnerHTMLTest
+INFO: import nullTranslations from "./locales/null/translation.json" with { type: "json" };
+
+const i18nDefaultLang = "null";
+const i18nPrefix = "null";
+const i18nKeyPrefix = "null";
+
+function loadTranslations(lang) {
+    switch (lang) {
+        case "null":
+            return nullTranslations;
+
+        default:
+            return nullTranslations;
+    }
+}
+
+function translatePage(lang) {
+    const translations = loadTranslations(lang);
+
+    document.documentElement.lang = lang;
+
+    const elements = document.querySelectorAll('.' + i18nPrefix);
+    let key = null;
+    let value = null;
+
+    for (const elem of elements) {
+        key = getJsonKey(elem);
+
+        try {
+            if (!key) throw new Error('The key class was not specified or is in an incorrect format.');
+        } catch (error) {
+            console.error(error);
+            break;
+        }
+
+        value = getValueByKey(translations, key);
+
+        if (value) {
+            translateElement(elem, value);
+        }
+        else {
+            console.warn(`The following key '${key}' was not found in the json file for the lang '${lang}'.`);
+        }
+    }
+}
+
+function getJsonKey(elem) {
+    const classesArray = [...elem.classList];
+    const delimiter = "_";
+    let index = null;
+    let key = null;
+
+    for (const c of classesArray) {
+        if (c.includes(i18nKeyPrefix)) {
+            index = c.indexOf(delimiter);
+            key = c.slice(index + 1);
+            key = key.replaceAll(delimiter, ".");
+        }
+    }
+
+    return key;
+}
+
+function getValueByKey(obj, key) {
+    return key.split('.').reduce(
+        (acc, part) => acc && acc[part], obj);
+}
+
+function translateElement(elem, value) {
+
+    if (elem.tagName === "TABLE") {
+        const elements = elem.getElementsByTagName("tr");
+        let index = 0;
+
+        for (const e of elements) {
+            translateTr(e, value[index], index);
+            index++;
+        }
+
+        return;
+    }
+
+    if (elem.tagName === "SELECT") {
+        const elements = elem.getElementsByTagName("option");
+        let index = 0;
+        const keys = Object.keys(value[index]);
+
+        for (const e of elements) {
+            translateElement(e, value[index][keys[0]]);
+            index++;
+        }
+
+        return;
+    }
+
+    if (hasHTML(value)) {
+        changeInnerHTML(elem, value);
+    }
+    else {
+        changeTextContent(elem, value);
+    }
+
+    return;
+}
+
+function translateTr(elem, value, index) {
+    let row = null;
+
+    if (index === 0) {
+        row = elem.getElementsByTagName("th");
+    }
+    else {
+        row = elem.getElementsByTagName("td");
+    }
+
+    const keys = Object.keys(value);
+    let indexCell = 0;
+
+    for (const cell of row) {
+        if (cell.childElementCount > 0) {
+            const c = cell.querySelector("p");
+            translateElement(c, value[keys[indexCell]]);
+        }
+        else {
+            const c = cell;
+            translateElement(c, value[keys[indexCell]]);
+        }
+
+        indexCell++;
+    }
+}
+
+function changeTextContent(elem, value) {
+    if (elem.childElementCount > 0 && elem.firstElementChild.tagName === "SPAN") {
+        elem.firstElementChild.textContent = value;
+    }
+    else {
+        elem.textContent = value;
+    }
+}
+
+function changeInnerHTML(elem, value) {
+    if (elem.childElementCount > 0 && elem.firstElementChild.tagName === "SPAN") {
+        elem.firstElementChild.innerHTML = value;
+    }
+    else {
+        elem.innerHTML = value;
+    }
+}
+
+function hasHTML(value) {
+    const regexHTML = /<\/?[a-z][\s\S]*>/i;
+
+    return regexHTML.test(value);
+}
+
+function createNavbar() {
+    const reference = document.querySelector("#content");
+    let navbar = document.createElement("div");
+
+    navbar.setAttribute("id", "navbar");
+    reference.parentNode.insertBefore(navbar, reference);
+
+    navbar.innerHTML =
+        `<select class="i18n i18n-key_locales" id="lang-switcher">
+            <option value="de">German</option>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+        </select>
+`;
+}
+
+function init() {
+
+    createNavbar();
+
+    const switcher = document.getElementById('lang-switcher');
+    switcher.value = i18nDefaultLang;
+    
+    translatePage(i18nDefaultLang);
+  
+    switcher.addEventListener('change', (e) => {
+        const selectedLang = e.target.value;
+        translatePage(selectedLang);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', init);
+]]></system-err>
+  </testcase>
+  <testcase name="replaceImportsTest" classname="I18nTests" time="0.012">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests replaceImportsTest
+INFO: import deTranslations from "./locales/de/test-file-json.json" with { type: "json" };
+import enTranslations from "./locales/en/test-file-json.json" with { type: "json" };
+import esTranslations from "./locales/es/test-file-json.json" with { type: "json" };
+
+const i18nDefaultLang = "null";
+const i18nPrefix = "null";
+const i18nKeyPrefix = "null";
+
+function loadTranslations(lang) {
+    switch (lang) {
+        case "null":
+            return nullTranslations;
+
+        default:
+            return nullTranslations;
+    }
+}
+
+function translatePage(lang) {
+    const translations = loadTranslations(lang);
+
+    document.documentElement.lang = lang;
+
+    const elements = document.querySelectorAll('.' + i18nPrefix);
+    let key = null;
+    let value = null;
+
+    for (const elem of elements) {
+        key = getJsonKey(elem);
+
+        try {
+            if (!key) throw new Error('The key class was not specified or is in an incorrect format.');
+        } catch (error) {
+            console.error(error);
+            break;
+        }
+
+        value = getValueByKey(translations, key);
+
+        if (value) {
+            translateElement(elem, value);
+        }
+        else {
+            console.warn(`The following key '${key}' was not found in the json file for the lang '${lang}'.`);
+        }
+    }
+}
+
+function getJsonKey(elem) {
+    const classesArray = [...elem.classList];
+    const delimiter = "_";
+    let index = null;
+    let key = null;
+
+    for (const c of classesArray) {
+        if (c.includes(i18nKeyPrefix)) {
+            index = c.indexOf(delimiter);
+            key = c.slice(index + 1);
+            key = key.replaceAll(delimiter, ".");
+        }
+    }
+
+    return key;
+}
+
+function getValueByKey(obj, key) {
+    return key.split('.').reduce(
+        (acc, part) => acc && acc[part], obj);
+}
+
+function translateElement(elem, value) {
+
+    if (elem.tagName === "TABLE") {
+        const elements = elem.getElementsByTagName("tr");
+        let index = 0;
+
+        for (const e of elements) {
+            translateTr(e, value[index], index);
+            index++;
+        }
+
+        return;
+    }
+
+    if (elem.tagName === "SELECT") {
+        const elements = elem.getElementsByTagName("option");
+        let index = 0;
+        const keys = Object.keys(value[index]);
+
+        for (const e of elements) {
+            translateElement(e, value[index][keys[0]]);
+            index++;
+        }
+
+        return;
+    }
+
+    if (hasHTML(value)) {
+        changeInnerHTML(elem, value);
+    }
+    else {
+        changeTextContent(elem, value);
+    }
+
+    return;
+}
+
+function translateTr(elem, value, index) {
+    let row = null;
+
+    if (index === 0) {
+        row = elem.getElementsByTagName("th");
+    }
+    else {
+        row = elem.getElementsByTagName("td");
+    }
+
+    const keys = Object.keys(value);
+    let indexCell = 0;
+
+    for (const cell of row) {
+        if (cell.childElementCount > 0) {
+            const c = cell.querySelector("p");
+            translateElement(c, value[keys[indexCell]]);
+        }
+        else {
+            const c = cell;
+            translateElement(c, value[keys[indexCell]]);
+        }
+
+        indexCell++;
+    }
+}
+
+function changeTextContent(elem, value) {
+    if (elem.childElementCount > 0 && elem.firstElementChild.tagName === "SPAN") {
+        elem.firstElementChild.textContent = value;
+    }
+    else {
+        elem.textContent = value;
+    }
+}
+
+function changeInnerHTML(elem, value) {
+    if (elem.childElementCount > 0 && elem.firstElementChild.tagName === "SPAN") {
+        elem.firstElementChild.innerHTML = value;
+    }
+    else {
+        elem.innerHTML = value;
+    }
+}
+
+function hasHTML(value) {
+    const regexHTML = /<\/?[a-z][\s\S]*>/i;
+
+    return regexHTML.test(value);
+}
+
+function createNavbar() {
+    const reference = document.querySelector("#content");
+    let navbar = document.createElement("div");
+
+    navbar.setAttribute("id", "navbar");
+    reference.parentNode.insertBefore(navbar, reference);
+
+    navbar.innerHTML =
+        `null`;
+}
+
+function init() {
+
+    createNavbar();
+
+    const switcher = document.getElementById('lang-switcher');
+    switcher.value = i18nDefaultLang;
+    
+    translatePage(i18nDefaultLang);
+  
+    switcher.addEventListener('change', (e) => {
+        const selectedLang = e.target.value;
+        translatePage(selectedLang);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', init);
+]]></system-err>
+  </testcase>
+  <testcase name="replaceAttributeValuesTest" classname="I18nTests" time="0.011">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests replaceAttributeValuesTest
+INFO: import nullTranslations from "./locales/null/translation.json" with { type: "json" };
+
+const i18nDefaultLang = "en";
+const i18nPrefix = "i18n";
+const i18nKeyPrefix = "key";
+
+function loadTranslations(lang) {
+    switch (lang) {
+        case "null":
+            return nullTranslations;
+
+        default:
+            return nullTranslations;
+    }
+}
+
+function translatePage(lang) {
+    const translations = loadTranslations(lang);
+
+    document.documentElement.lang = lang;
+
+    const elements = document.querySelectorAll('.' + i18nPrefix);
+    let key = null;
+    let value = null;
+
+    for (const elem of elements) {
+        key = getJsonKey(elem);
+
+        try {
+            if (!key) throw new Error('The key class was not specified or is in an incorrect format.');
+        } catch (error) {
+            console.error(error);
+            break;
+        }
+
+        value = getValueByKey(translations, key);
+
+        if (value) {
+            translateElement(elem, value);
+        }
+        else {
+            console.warn(`The following key '${key}' was not found in the json file for the lang '${lang}'.`);
+        }
+    }
+}
+
+function getJsonKey(elem) {
+    const classesArray = [...elem.classList];
+    const delimiter = "_";
+    let index = null;
+    let key = null;
+
+    for (const c of classesArray) {
+        if (c.includes(i18nKeyPrefix)) {
+            index = c.indexOf(delimiter);
+            key = c.slice(index + 1);
+            key = key.replaceAll(delimiter, ".");
+        }
+    }
+
+    return key;
+}
+
+function getValueByKey(obj, key) {
+    return key.split('.').reduce(
+        (acc, part) => acc && acc[part], obj);
+}
+
+function translateElement(elem, value) {
+
+    if (elem.tagName === "TABLE") {
+        const elements = elem.getElementsByTagName("tr");
+        let index = 0;
+
+        for (const e of elements) {
+            translateTr(e, value[index], index);
+            index++;
+        }
+
+        return;
+    }
+
+    if (elem.tagName === "SELECT") {
+        const elements = elem.getElementsByTagName("option");
+        let index = 0;
+        const keys = Object.keys(value[index]);
+
+        for (const e of elements) {
+            translateElement(e, value[index][keys[0]]);
+            index++;
+        }
+
+        return;
+    }
+
+    if (hasHTML(value)) {
+        changeInnerHTML(elem, value);
+    }
+    else {
+        changeTextContent(elem, value);
+    }
+
+    return;
+}
+
+function translateTr(elem, value, index) {
+    let row = null;
+
+    if (index === 0) {
+        row = elem.getElementsByTagName("th");
+    }
+    else {
+        row = elem.getElementsByTagName("td");
+    }
+
+    const keys = Object.keys(value);
+    let indexCell = 0;
+
+    for (const cell of row) {
+        if (cell.childElementCount > 0) {
+            const c = cell.querySelector("p");
+            translateElement(c, value[keys[indexCell]]);
+        }
+        else {
+            const c = cell;
+            translateElement(c, value[keys[indexCell]]);
+        }
+
+        indexCell++;
+    }
+}
+
+function changeTextContent(elem, value) {
+    if (elem.childElementCount > 0 && elem.firstElementChild.tagName === "SPAN") {
+        elem.firstElementChild.textContent = value;
+    }
+    else {
+        elem.textContent = value;
+    }
+}
+
+function changeInnerHTML(elem, value) {
+    if (elem.childElementCount > 0 && elem.firstElementChild.tagName === "SPAN") {
+        elem.firstElementChild.innerHTML = value;
+    }
+    else {
+        elem.innerHTML = value;
+    }
+}
+
+function hasHTML(value) {
+    const regexHTML = /<\/?[a-z][\s\S]*>/i;
+
+    return regexHTML.test(value);
+}
+
+function createNavbar() {
+    const reference = document.querySelector("#content");
+    let navbar = document.createElement("div");
+
+    navbar.setAttribute("id", "navbar");
+    reference.parentNode.insertBefore(navbar, reference);
+
+    navbar.innerHTML =
+        `null`;
+}
+
+function init() {
+
+    createNavbar();
+
+    const switcher = document.getElementById('lang-switcher');
+    switcher.value = i18nDefaultLang;
+    
+    translatePage(i18nDefaultLang);
+  
+    switcher.addEventListener('change', (e) => {
+        const selectedLang = e.target.value;
+        translatePage(selectedLang);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', init);
+]]></system-err>
+  </testcase>
+  <testcase name="isLocaleValidTest" classname="I18nTests" time="0.004"/>
+  <testcase name="getKeysTest" classname="I18nTests" time="0.006"/>
+  <testcase name="getAllLangJsonTest" classname="I18nTests" time="0.116">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests getAllLangJsonTest
+INFO: <script type="application/json" id="i18n-lang-json-de">
+{
+  "company" : "EuroTech Deutschland",
+  "location" : {
+    "city" : "München",
+    "country" : "Deutschland"
+  },
+  "courses" : [ {
+    "title" : "Java-Grundlagen",
+    "durationHours" : 40,
+    "isAvailable" : true,
+    "modules" : [ "Variablen", "Schleifen", "Bedingungen" ]
+  }, {
+    "title" : "Java für Fortgeschrittene",
+    "durationHours" : 80,
+    "isAvailable" : false,
+    "modules" : [ "OOP", "Spring Boot", "Testing" ]
+  } ],
+  "isActive" : true
+}
+</script>
+<script type="application/json" id="i18n-lang-json-en">
+{
+  "company" : "EuroTech Germany",
+  "location" : {
+    "city" : "Munich",
+    "country" : "Germany"
+  },
+  "courses" : [ {
+    "title" : "Java Basics",
+    "durationHours" : 40,
+    "isAvailable" : true,
+    "modules" : [ "Variables", "Loops", "Conditions" ]
+  }, {
+    "title" : "Advanced Java",
+    "durationHours" : 80,
+    "isAvailable" : false,
+    "modules" : [ "OOP", "Spring Boot", "Testing" ]
+  } ],
+  "isActive" : true
+}
+</script>
+<script type="application/json" id="i18n-lang-json-es">
+{
+  "company" : "EuroTech Alemania",
+  "location" : {
+    "city" : "Múnich",
+    "country" : "Alemania"
+  },
+  "courses" : [ {
+    "title" : "Fundamentos de Java",
+    "durationHours" : 40,
+    "isAvailable" : true,
+    "modules" : [ "Variables", "Bucles", "Condiciones" ]
+  }, {
+    "title" : "Java Avanzado",
+    "durationHours" : 80,
+    "isAvailable" : false,
+    "modules" : [ "POO", "Spring Boot", "Pruebas" ]
+  } ],
+  "isActive" : true
+}
+</script>
+
+]]></system-err>
+  </testcase>
+  <testcase name="getSwitcherOptionsTest" classname="I18nTests" time="0.004">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests getSwitcherOptionsTest
+INFO:             <option value="de">German</option>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+
+]]></system-err>
+  </testcase>
+  <testcase name="getSwitcherSelectTest" classname="I18nTests" time="0.005">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests getSwitcherSelectTest
+INFO: <select class="i18n i18n-key_locales" id="lang-switcher">
+            <option value="de">German</option>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+        </select>
+
+]]></system-err>
+  </testcase>
+  <testcase name="replaceFunctionLoadTest" classname="I18nTests" time="0.005">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests replaceFunctionLoadTest
+INFO: import nullTranslations from "./locales/null/translation.json" with { type: "json" };
+
+const i18nDefaultLang = "null";
+const i18nPrefix = "null";
+const i18nKeyPrefix = "null";
+
+function loadTranslations(lang) {
+    switch (lang) {
+        case "de":
+            return deTranslations;
+        case "en":
+            return enTranslations;
+        case "es":
+            return esTranslations;
+
+        default:
+            return enTranslations;
+    }
+}
+
+function translatePage(lang) {
+    const translations = loadTranslations(lang);
+
+    document.documentElement.lang = lang;
+
+    const elements = document.querySelectorAll('.' + i18nPrefix);
+    let key = null;
+    let value = null;
+
+    for (const elem of elements) {
+        key = getJsonKey(elem);
+
+        try {
+            if (!key) throw new Error('The key class was not specified or is in an incorrect format.');
+        } catch (error) {
+            console.error(error);
+            break;
+        }
+
+        value = getValueByKey(translations, key);
+
+        if (value) {
+            translateElement(elem, value);
+        }
+        else {
+            console.warn(`The following key '${key}' was not found in the json file for the lang '${lang}'.`);
+        }
+    }
+}
+
+function getJsonKey(elem) {
+    const classesArray = [...elem.classList];
+    const delimiter = "_";
+    let index = null;
+    let key = null;
+
+    for (const c of classesArray) {
+        if (c.includes(i18nKeyPrefix)) {
+            index = c.indexOf(delimiter);
+            key = c.slice(index + 1);
+            key = key.replaceAll(delimiter, ".");
+        }
+    }
+
+    return key;
+}
+
+function getValueByKey(obj, key) {
+    return key.split('.').reduce(
+        (acc, part) => acc && acc[part], obj);
+}
+
+function translateElement(elem, value) {
+
+    if (elem.tagName === "TABLE") {
+        const elements = elem.getElementsByTagName("tr");
+        let index = 0;
+
+        for (const e of elements) {
+            translateTr(e, value[index], index);
+            index++;
+        }
+
+        return;
+    }
+
+    if (elem.tagName === "SELECT") {
+        const elements = elem.getElementsByTagName("option");
+        let index = 0;
+        const keys = Object.keys(value[index]);
+
+        for (const e of elements) {
+            translateElement(e, value[index][keys[0]]);
+            index++;
+        }
+
+        return;
+    }
+
+    if (hasHTML(value)) {
+        changeInnerHTML(elem, value);
+    }
+    else {
+        changeTextContent(elem, value);
+    }
+
+    return;
+}
+
+function translateTr(elem, value, index) {
+    let row = null;
+
+    if (index === 0) {
+        row = elem.getElementsByTagName("th");
+    }
+    else {
+        row = elem.getElementsByTagName("td");
+    }
+
+    const keys = Object.keys(value);
+    let indexCell = 0;
+
+    for (const cell of row) {
+        if (cell.childElementCount > 0) {
+            const c = cell.querySelector("p");
+            translateElement(c, value[keys[indexCell]]);
+        }
+        else {
+            const c = cell;
+            translateElement(c, value[keys[indexCell]]);
+        }
+
+        indexCell++;
+    }
+}
+
+function changeTextContent(elem, value) {
+    if (elem.childElementCount > 0 && elem.firstElementChild.tagName === "SPAN") {
+        elem.firstElementChild.textContent = value;
+    }
+    else {
+        elem.textContent = value;
+    }
+}
+
+function changeInnerHTML(elem, value) {
+    if (elem.childElementCount > 0 && elem.firstElementChild.tagName === "SPAN") {
+        elem.firstElementChild.innerHTML = value;
+    }
+    else {
+        elem.innerHTML = value;
+    }
+}
+
+function hasHTML(value) {
+    const regexHTML = /<\/?[a-z][\s\S]*>/i;
+
+    return regexHTML.test(value);
+}
+
+function createNavbar() {
+    const reference = document.querySelector("#content");
+    let navbar = document.createElement("div");
+
+    navbar.setAttribute("id", "navbar");
+    reference.parentNode.insertBefore(navbar, reference);
+
+    navbar.innerHTML =
+        `null`;
+}
+
+function init() {
+
+    createNavbar();
+
+    const switcher = document.getElementById('lang-switcher');
+    switcher.value = i18nDefaultLang;
+    
+    translatePage(i18nDefaultLang);
+  
+    switcher.addEventListener('change', (e) => {
+        const selectedLang = e.target.value;
+        translatePage(selectedLang);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', init);
+]]></system-err>
+  </testcase>
+  <testcase name="readScriptFileTest" classname="I18nTests" time="0.004">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests readScriptFileTest
+INFO: import nullTranslations from "./locales/null/translation.json" with { type: "json" };
+
+const i18nDefaultLang = "null";
+const i18nPrefix = "null";
+const i18nKeyPrefix = "null";
+
+function loadTranslations(lang) {
+    switch (lang) {
+        case "null":
+            return nullTranslations;
+
+        default:
+            return nullTranslations;
+    }
+}
+
+function translatePage(lang) {
+    const translations = loadTranslations(lang);
+
+    document.documentElement.lang = lang;
+
+    const elements = document.querySelectorAll('.' + i18nPrefix);
+    let key = null;
+    let value = null;
+
+    for (const elem of elements) {
+        key = getJsonKey(elem);
+
+        try {
+            if (!key) throw new Error('The key class was not specified or is in an incorrect format.');
+        } catch (error) {
+            console.error(error);
+            break;
+        }
+
+        value = getValueByKey(translations, key);
+
+        if (value) {
+            translateElement(elem, value);
+        }
+        else {
+            console.warn(`The following key '${key}' was not found in the json file for the lang '${lang}'.`);
+        }
+    }
+}
+
+function getJsonKey(elem) {
+    const classesArray = [...elem.classList];
+    const delimiter = "_";
+    let index = null;
+    let key = null;
+
+    for (const c of classesArray) {
+        if (c.includes(i18nKeyPrefix)) {
+            index = c.indexOf(delimiter);
+            key = c.slice(index + 1);
+            key = key.replaceAll(delimiter, ".");
+        }
+    }
+
+    return key;
+}
+
+function getValueByKey(obj, key) {
+    return key.split('.').reduce(
+        (acc, part) => acc && acc[part], obj);
+}
+
+function translateElement(elem, value) {
+
+    if (elem.tagName === "TABLE") {
+        const elements = elem.getElementsByTagName("tr");
+        let index = 0;
+
+        for (const e of elements) {
+            translateTr(e, value[index], index);
+            index++;
+        }
+
+        return;
+    }
+
+    if (elem.tagName === "SELECT") {
+        const elements = elem.getElementsByTagName("option");
+        let index = 0;
+        const keys = Object.keys(value[index]);
+
+        for (const e of elements) {
+            translateElement(e, value[index][keys[0]]);
+            index++;
+        }
+
+        return;
+    }
+
+    if (hasHTML(value)) {
+        changeInnerHTML(elem, value);
+    }
+    else {
+        changeTextContent(elem, value);
+    }
+
+    return;
+}
+
+function translateTr(elem, value, index) {
+    let row = null;
+
+    if (index === 0) {
+        row = elem.getElementsByTagName("th");
+    }
+    else {
+        row = elem.getElementsByTagName("td");
+    }
+
+    const keys = Object.keys(value);
+    let indexCell = 0;
+
+    for (const cell of row) {
+        if (cell.childElementCount > 0) {
+            const c = cell.querySelector("p");
+            translateElement(c, value[keys[indexCell]]);
+        }
+        else {
+            const c = cell;
+            translateElement(c, value[keys[indexCell]]);
+        }
+
+        indexCell++;
+    }
+}
+
+function changeTextContent(elem, value) {
+    if (elem.childElementCount > 0 && elem.firstElementChild.tagName === "SPAN") {
+        elem.firstElementChild.textContent = value;
+    }
+    else {
+        elem.textContent = value;
+    }
+}
+
+function changeInnerHTML(elem, value) {
+    if (elem.childElementCount > 0 && elem.firstElementChild.tagName === "SPAN") {
+        elem.firstElementChild.innerHTML = value;
+    }
+    else {
+        elem.innerHTML = value;
+    }
+}
+
+function hasHTML(value) {
+    const regexHTML = /<\/?[a-z][\s\S]*>/i;
+
+    return regexHTML.test(value);
+}
+
+function createNavbar() {
+    const reference = document.querySelector("#content");
+    let navbar = document.createElement("div");
+
+    navbar.setAttribute("id", "navbar");
+    reference.parentNode.insertBefore(navbar, reference);
+
+    navbar.innerHTML =
+        `null`;
+}
+
+function init() {
+
+    createNavbar();
+
+    const switcher = document.getElementById('lang-switcher');
+    switcher.value = i18nDefaultLang;
+    
+    translatePage(i18nDefaultLang);
+  
+    switcher.addEventListener('change', (e) => {
+        const selectedLang = e.target.value;
+        translatePage(selectedLang);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', init);
+]]></system-err>
+  </testcase>
+  <testcase name="getAttributeValuesTest" classname="I18nTests" time="0.003">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests getAttributeValuesTest
+INFO: const i18nDefaultLang = "en";
+const i18nPrefix = "i18n";
+const i18nKeyPrefix = "key";
+
+]]></system-err>
+  </testcase>
+  <testcase name="replaceNavbarInnerHTMLTest" classname="I18nTests" time="0.007">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests replaceNavbarInnerHTMLTest
+INFO: import nullTranslations from "./locales/null/translation.json" with { type: "json" };
+
+const i18nDefaultLang = "null";
+const i18nPrefix = "null";
+const i18nKeyPrefix = "null";
+
+function loadTranslations(lang) {
+    switch (lang) {
+        case "null":
+            return nullTranslations;
+
+        default:
+            return nullTranslations;
+    }
+}
+
+function translatePage(lang) {
+    const translations = loadTranslations(lang);
+
+    document.documentElement.lang = lang;
+
+    const elements = document.querySelectorAll('.' + i18nPrefix);
+    let key = null;
+    let value = null;
+
+    for (const elem of elements) {
+        key = getJsonKey(elem);
+
+        try {
+            if (!key) throw new Error('The key class was not specified or is in an incorrect format.');
+        } catch (error) {
+            console.error(error);
+            break;
+        }
+
+        value = getValueByKey(translations, key);
+
+        if (value) {
+            translateElement(elem, value);
+        }
+        else {
+            console.warn(`The following key '${key}' was not found in the json file for the lang '${lang}'.`);
+        }
+    }
+}
+
+function getJsonKey(elem) {
+    const classesArray = [...elem.classList];
+    const delimiter = "_";
+    let index = null;
+    let key = null;
+
+    for (const c of classesArray) {
+        if (c.includes(i18nKeyPrefix)) {
+            index = c.indexOf(delimiter);
+            key = c.slice(index + 1);
+            key = key.replaceAll(delimiter, ".");
+        }
+    }
+
+    return key;
+}
+
+function getValueByKey(obj, key) {
+    return key.split('.').reduce(
+        (acc, part) => acc && acc[part], obj);
+}
+
+function translateElement(elem, value) {
+
+    if (elem.tagName === "TABLE") {
+        const elements = elem.getElementsByTagName("tr");
+        let index = 0;
+
+        for (const e of elements) {
+            translateTr(e, value[index], index);
+            index++;
+        }
+
+        return;
+    }
+
+    if (elem.tagName === "SELECT") {
+        const elements = elem.getElementsByTagName("option");
+        let index = 0;
+        const keys = Object.keys(value[index]);
+
+        for (const e of elements) {
+            translateElement(e, value[index][keys[0]]);
+            index++;
+        }
+
+        return;
+    }
+
+    if (hasHTML(value)) {
+        changeInnerHTML(elem, value);
+    }
+    else {
+        changeTextContent(elem, value);
+    }
+
+    return;
+}
+
+function translateTr(elem, value, index) {
+    let row = null;
+
+    if (index === 0) {
+        row = elem.getElementsByTagName("th");
+    }
+    else {
+        row = elem.getElementsByTagName("td");
+    }
+
+    const keys = Object.keys(value);
+    let indexCell = 0;
+
+    for (const cell of row) {
+        if (cell.childElementCount > 0) {
+            const c = cell.querySelector("p");
+            translateElement(c, value[keys[indexCell]]);
+        }
+        else {
+            const c = cell;
+            translateElement(c, value[keys[indexCell]]);
+        }
+
+        indexCell++;
+    }
+}
+
+function changeTextContent(elem, value) {
+    if (elem.childElementCount > 0 && elem.firstElementChild.tagName === "SPAN") {
+        elem.firstElementChild.textContent = value;
+    }
+    else {
+        elem.textContent = value;
+    }
+}
+
+function changeInnerHTML(elem, value) {
+    if (elem.childElementCount > 0 && elem.firstElementChild.tagName === "SPAN") {
+        elem.firstElementChild.innerHTML = value;
+    }
+    else {
+        elem.innerHTML = value;
+    }
+}
+
+function hasHTML(value) {
+    const regexHTML = /<\/?[a-z][\s\S]*>/i;
+
+    return regexHTML.test(value);
+}
+
+function createNavbar() {
+    const reference = document.querySelector("#content");
+    let navbar = document.createElement("div");
+
+    navbar.setAttribute("id", "navbar");
+    reference.parentNode.insertBefore(navbar, reference);
+
+    navbar.innerHTML =
+        `<select class="i18n i18n-key_locales" id="lang-switcher">
+            <option value="de">German</option>
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+        </select>
+`;
+}
+
+function init() {
+
+    createNavbar();
+
+    const switcher = document.getElementById('lang-switcher');
+    switcher.value = i18nDefaultLang;
+    
+    translatePage(i18nDefaultLang);
+  
+    switcher.addEventListener('change', (e) => {
+        const selectedLang = e.target.value;
+        translatePage(selectedLang);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', init);
+]]></system-err>
+  </testcase>
+  <testcase name="getFileNamesTest" classname="I18nTests" time="0.004"/>
+  <testcase name="getSwitchCasesTest" classname="I18nTests" time="0.004">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests getSwitchCasesTest
+INFO:         case "de":
+            return deTranslations;
+        case "en":
+            return enTranslations;
+        case "es":
+            return esTranslations;
+
+]]></system-err>
+  </testcase>
+  <testcase name="getImportsTest" classname="I18nTests" time="0.007">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests getImportsTest
+INFO: import deTranslations from "./locales/de/test-file-json.json" with { type: "json" };
+import enTranslations from "./locales/en/test-file-json.json" with { type: "json" };
+import esTranslations from "./locales/es/test-file-json.json" with { type: "json" };
+
+]]></system-err>
+  </testcase>
+  <testcase name="getLangJsonTest" classname="I18nTests" time="0.007">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests getLangJsonTest
+INFO: <script type="application/json" id="i18n-lang-json-de">
+{
+  "company" : "EuroTech Deutschland",
+  "location" : {
+    "city" : "München",
+    "country" : "Deutschland"
+  },
+  "courses" : [ {
+    "title" : "Java-Grundlagen",
+    "durationHours" : 40,
+    "isAvailable" : true,
+    "modules" : [ "Variablen", "Schleifen", "Bedingungen" ]
+  }, {
+    "title" : "Java für Fortgeschrittene",
+    "durationHours" : 80,
+    "isAvailable" : false,
+    "modules" : [ "OOP", "Spring Boot", "Testing" ]
+  } ],
+  "isActive" : true
+}
+</script>
+]]></system-err>
+  </testcase>
+  <testcase name="readJsonFileTest" classname="I18nTests" time="0.004"/>
+  <testcase name="getSwitchDefaultTest" classname="I18nTests" time="0.002">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests getSwitchDefaultTest
+INFO:         default:
+            return esTranslations;
+
+]]></system-err>
+  </testcase>
+  <testcase name="getTranslationsTest" classname="I18nTests" time="0.008">
+    <system-err><![CDATA[jul 30, 2026 6:10:19 A. M. I18nTests getTranslationsTest
+INFO: c:\Users\PC\Documents\Java\asciidoctorj-i18n-extension\src\main\resources
+jul 30, 2026 6:10:19 A. M. I18nTests getTranslationsTest
+INFO: {"company":"EuroTech Germany","location":{"city":"Munich","country":"Germany"},"courses":[{"title":"Java Basics","durationHours":40,"isAvailable":true,"modules":["Variables","Loops","Conditions"]},{"title":"Advanced Java","durationHours":80,"isAvailable":false,"modules":["OOP","Spring Boot","Testing"]}],"isActive":true}
+]]></system-err>
+  </testcase>
+  <testcase name="junitTest" classname="I18nTests" time="0.002"/>
+</testsuite>
