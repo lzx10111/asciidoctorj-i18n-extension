@@ -61,40 +61,74 @@ function getValueByKey(obj, key) {
 }
 
 function translateElement(elem, value) {
-
-    if (elem.tagName === "TABLE") {
-        const elements = elem.getElementsByTagName("tr");
-        let index = 0;
-
-        for (const e of elements) {
-            translateTr(e, value[index], index);
-            index++;
-        }
-
-        return;
+    switch (elem.tagName) {
+      case "DIV":
+        translateDiv(elem, value);
+        break;
+      case "TABLE":
+        translateTable(elem, value);
+        break;
+      case "UL":
+        translateUl(elem, value);
+        break;
+      case "SELECT":
+        translateSelect(elem, value);
+        break;
+    
+      default:
+        translateDefault(elem, value);
+        break;
     }
+}
 
-    if (elem.tagName === "SELECT") {
-        const elements = elem.getElementsByTagName("option");
-        let index = 0;
+function translateDiv(elem, value) {
+    if (hasChildWithoutText(elem)) {
+        translateElement(elem.firstElementChild, value);
+    }
+    else {
+        translateDefault(elem, value);
+    }
+}
+
+function translateTable(elem, value) {
+    const elements = elem.getElementsByTagName("tr");
+    let index = 0;
+
+    for (const e of elements) {
+        translateTr(e, value[index], index);
+        index++;
+    }
+}
+
+function translateUl(elem, value) {
+    const elements = elem.getElementsByTagName("li");
+    let index = 0;
+    const keys = Object.keys(value[index]);
+
+    for (const e of elements) {
+        translateElement(e, value[index][keys[0]]);
+        index++;
+    }
+}
+
+function translateSelect(elem, value) {
+    const elements = elem.getElementsByTagName("option");
+    let index = 0;
+
+    for (const e of elements) {
         const keys = Object.keys(value[index]);
-
-        for (const e of elements) {
-            translateElement(e, value[index][keys[0]]);
-            index++;
-        }
-
-        return;
+        translateElement(e, value[index][keys[0]]);
+        index++;
     }
+}
 
+function translateDefault(elem, value) {
     if (hasHTML(value)) {
         changeInnerHTML(elem, value);
     }
     else {
         changeTextContent(elem, value);
     }
-
-    return;
 }
 
 function translateTr(elem, value, index) {
@@ -122,6 +156,22 @@ function translateTr(elem, value, index) {
 
         indexCell++;
     }
+}
+
+function hasChildWithoutText(element) {
+  const hasChildren = element.children.length > 0;
+  
+  let hasOwnText = false;
+  for (const node of element.childNodes) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      if (node.textContent.trim() !== "") {
+        hasOwnText = true;
+        break;
+      }
+    }
+  }
+  
+  return hasChildren && !hasOwnText;
 }
 
 function changeTextContent(elem, value) {
